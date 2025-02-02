@@ -8,9 +8,14 @@ public class Car extends Vehicle{
         return 5;
     }
 
+    public static Vehicle buildVehicle(String name) {
+        return new Car(name);
+    }
 
     @Override
     public void fixed() {
         System.out.println("Car " + getName() + " - all components have been fixed.");
     }
+
+
 }

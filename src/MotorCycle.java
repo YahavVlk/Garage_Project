@@ -8,9 +8,15 @@ public class MotorCycle extends Vehicle{
         return 3;
     }
 
+    public static Vehicle buildVehicle(String name) {
+        return new MotorCycle(name);
+    }
+
 
     @Override
     public void fixed() {
         System.out.println("MotorCycle " + getName() + " - Both wheels have been fixed.");
     }
+
+
 }
