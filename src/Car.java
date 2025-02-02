@@ -16,6 +16,4 @@ public class Car extends Vehicle{
     public void fixed() {
         System.out.println("Car " + getName() + " - all components have been fixed.");
     }
-
-
 }
